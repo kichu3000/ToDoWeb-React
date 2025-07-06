@@ -1,12 +1,9 @@
 .container {
   display: flex;
-  /* justify-content: center; */
-  height: 100px;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
   align-items: center;
   padding: 1rem;
+  min-height: 100vh;
     
 }
 .header{
@@ -42,24 +39,56 @@ input:focus {
 }
 
 .todo-list {
-  flex: 1; /* Fills remaining space */
-  overflow-y: auto; /* Makes it scrollable */
+  width: 90%;
+  max-width: 350px;
   margin: 1rem 0;
-  padding: 1rem;
-  background-color: hsl(260, 30%, 20%);
+  padding: 0.2rem 0;
+  background-color: hsl(260, 30%, 25%);
   border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  overflow-y: auto;
 }
-button{
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  height: 16px;
+  gap: 8px; /* Add spacing between checkbox and text */
+}
+.todo-item li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  text-align: left;
+}
+.submit{
     height: 30px;
     width: 80px;
     margin: 15px;
     font-size: medium;
     font-weight: 500;
     border: none;
+    border: 2px;
     transition: border-radius .6s ease, background-color .6s ease, transform .6s ease-out;
 }
-button:hover{
+.submit:hover{
     background-color: hsl(189, 55%, 76%);
     transform: scale(1.1);
     border-radius: 5px;
+}
+.delete{
+  background-color: hsl(260, 30%, 25%);
+  border: none;
+}
+.checkbox{
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  margin-left: 0;
+  align-self: flex-start;
 }
