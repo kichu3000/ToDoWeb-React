@@ -6,7 +6,7 @@ A simple and responsive To-Do List application built using **React**. Manage you
 
 ## 🔗 Live Demo
 
-👉 _(Demo link not provided — feel free to add a GitHub Pages or Netlify link here)_
+👉 [Check it out here](https://kichu3000.github.io/ToDoWeb-React/)
 
 ---
 
@@ -20,8 +20,6 @@ A simple and responsive To-Do List application built using **React**. Manage you
 ---
 
 ## 🖼️ Screenshots
-
-> Add your screenshots in a `screenshots/` folder and update the paths below
 
 ![Home](./screenshots/todo-home.png)
 
